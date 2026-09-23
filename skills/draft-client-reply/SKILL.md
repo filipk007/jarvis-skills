@@ -19,6 +19,16 @@ Or Filip asks you to check the inbox. Search Gmail for a new message from a cont
 
 One short email. Plain sentences. One purpose. Use the client's first name. Do not restate the whole history. Do not mention ZIP codes, pricing, or lead details that are not in the folder or in Filip's note.
 
-Show the draft in chat with the To address and the subject. Stop. Do not send. Do not create a Gmail draft unless Filip asks for one after he has seen the wording.
+Show the draft in chat with the To address, the subject, and this signature after the sign-off:
+
+```
+--
+FILIP KOSTKIEWICZ
+OWNER | HOLIDAY LIGHTING LEADS
+P: 407-376-7175
+W: holidaylightingleads.com
+```
+
+Gmail inserts that same signature on its own. When Filip asks for a Gmail draft, leave the signature out of the body so it is not doubled. Stop. Do not send. Do not create a Gmail draft unless Filip asks for one after he has seen the wording.
 
 Do not edit `territory.md`. If the reply would change a ZIP list or a property type, say that in chat for Client Success.
