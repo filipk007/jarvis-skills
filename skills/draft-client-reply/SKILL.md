@@ -17,9 +17,11 @@ Or Filip asks you to check the inbox. Search Gmail for a new message from a cont
 
 ## Write
 
+Reply in the existing email thread. Search Gmail for the latest thread with that contact and draft a reply to the newest message. Keep the thread's subject. Do not start a new email.
+
 One short email. Plain sentences. One purpose. Use the client's first name. Do not restate the whole history. Do not mention ZIP codes, pricing, or lead details that are not in the folder or in Filip's note.
 
-Show the draft in chat with the To address, the subject, and this signature after the sign-off:
+Show the draft in chat with the To address and the subject. After the sign-off, show this signature so Filip can see the whole note:
 
 ```
 --
@@ -29,6 +31,10 @@ P: 407-376-7175
 W: holidaylightingleads.com
 ```
 
-Gmail inserts that same signature on its own. When Filip asks for a Gmail draft, leave the signature out of the body so it is not doubled. Stop. Do not send. Do not create a Gmail draft unless Filip asks for one after he has seen the wording.
+Gmail inserts that same signature on its own. Leave it out of the Gmail body so it is not doubled.
+
+Then ask Filip with the question tool, with these choices: Approve, Decline, Change the wording. Wait for that answer. A chat reply of approve, decline, or a rewrite means the same thing when the card does not appear.
+
+Approve creates one unsent Gmail reply in that same thread and stops. Decline stops and sends nothing. A change rewrites the draft and asks again. Do not send.
 
 Do not edit `territory.md`. If the reply would change a ZIP list or a property type, say that in chat for Client Success.
