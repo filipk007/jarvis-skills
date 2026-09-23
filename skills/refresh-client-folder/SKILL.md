@@ -1,6 +1,6 @@
 ---
 name: refresh-client-folder
-description: Refresh one client's six-file folder from a read-only HubSpot company, its onboarding ticket, and the email engagements logged on that company.
+description: Refresh one client's six-file folder from a read-only HubSpot company and ticket. Use Gmail when a logged HubSpot email has no subject or body.
 ---
 
 # Refresh one client folder
@@ -11,13 +11,15 @@ Ask Filip for the HubSpot company id if the message does not already contain one
 
 ## Read
 
-Use HubSpot only. Read that company, its contacts, its onboarding tickets, and the email engagements already logged on the company. HubSpot activities are the mail record. Do not search Gmail when those engagements exist.
+Read the HubSpot company, its contacts, its onboarding tickets, and the email engagements logged on the company. HubSpot is the index: engagement id, date, and sender.
+
+A logged email with no subject and no body is not readable. For those, search Gmail for the contact email addresses and match the message by date and sender. One Gmail search, the latest 20 threads. Do not search Gmail when every logged email already has a subject or body.
 
 If more than one onboarding ticket matches, list the ticket ids and subjects and ask which one to use. If none match, continue and write `None recorded.` in the territory sections.
 
-Put the company, contacts, ticket, and email engagements into one `COMPOSIO_MULTI_EXECUTE_TOOL` call. Do not call `COMPOSIO_REMOTE_WORKBENCH`. Do not run a shell search outside `/Users/filipkostkiewicz/projects/jarvis-clients/`. The folder contract is in this skill. Do not look for it on disk, and do not request access to Documents, Desktop, or Downloads.
+Use one `COMPOSIO_MULTI_EXECUTE_TOOL` call for the HubSpot reads, and a second only for the Gmail search. Do not call `COMPOSIO_REMOTE_WORKBENCH`. Do not run a shell search outside `/Users/filipkostkiewicz/projects/jarvis-clients/`. The folder contract is in this skill. Do not look for it on disk, and do not request access to Documents, Desktop, or Downloads.
 
-For each logged email, keep the date, the sender address, and one sentence. Do not copy the raw body into the folder.
+For each email, keep the date, the HubSpot engagement id when there is one, the sender address, and one sentence from the subject or body. Do not copy the raw body into the folder. If Gmail cannot be read, keep the HubSpot row and write `Body was not available in HubSpot.`
 
 If HubSpot cannot be read, write no files. Name the failure and stop.
 
@@ -33,7 +35,7 @@ Write these six files. Do not open another document to learn the headings.
 
 `profile.md` has `# Profile`, `## Identity`, and `## Contacts`.
 `onboarding.md` has `# Onboarding`, `## Territory request`, `## Property focus`, and `## Open questions`.
-`communications.md` has `# Communications`, the sentence `Raw mail stays in Gmail.`, and `## Threads`. Under Threads, one bullet per HubSpot email: date, engagement id, sender, and one sentence.
+`communications.md` has `# Communications`, the sentence `Raw mail stays in Gmail.`, and `## Threads`. Under Threads, one bullet per email: date, HubSpot engagement id when there is one, sender, and one sentence. A sentence that only says "incoming reply" is not acceptable when Gmail has the message.
 `decisions.md` has `# Decisions`. If nothing changed, include `No decisions recorded yet.`
 `territory.md` has `# Territory`, `## ZIPs`, `## Property types`, `## Exclusions`, and `## Source`. An empty section says `None recorded.`
 `status.md` has `# Status` and, on the first refresh, the line `status: onboarding`. A later refresh leaves an existing `status: proposal` or `status: handed-to-fulfillment` line as it is.
