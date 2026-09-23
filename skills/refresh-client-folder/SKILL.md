@@ -13,7 +13,7 @@ Ask Filip for the HubSpot company id if the message does not already contain one
 
 Read the HubSpot company, its contacts, its onboarding tickets, and the email engagements logged on the company. HubSpot is the index: engagement id, date, and sender.
 
-A logged email with no subject and no body is not readable. For those, search Gmail for the contact email addresses and match the message by date and sender. One Gmail search, the latest 20 threads. Do not search Gmail when every logged email already has a subject or body.
+A logged email whose only text is the thread subject is not readable. The subject is often repeated on every reply. For those, search Gmail for the contact email addresses and replace each summary with one sentence from that message's body. One Gmail search, the latest 20 threads. Do not search Gmail when a logged email already includes its own body.
 
 If more than one onboarding ticket matches, list the ticket ids and subjects and ask which one to use. If none match, continue and write `None recorded.` in the territory sections.
 
