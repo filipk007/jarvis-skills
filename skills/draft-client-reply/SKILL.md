@@ -35,6 +35,6 @@ Gmail inserts that same signature on its own. Leave it out of the Gmail body so 
 
 Then ask Filip with the question tool, with these choices: Approve, Decline, Change the wording. Wait for that answer. A chat reply of approve, decline, or a rewrite means the same thing when the card does not appear.
 
-Approve creates one unsent Gmail message of that same kind: a new draft, or a reply in the existing thread. Decline stops and sends nothing. A change rewrites the draft and asks again. Do not send.
+Approve creates the Gmail message immediately: a new unsent draft, or an unsent reply in the existing thread. Do not ask again whether to save it. Decline stops and sends nothing. A change rewrites the draft and asks again. Do not send.
 
 Do not edit `territory.md`. If the reply would change a ZIP list or a property type, say that in chat for Client Success.
